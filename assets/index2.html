@@ -1,0 +1,23 @@
+<div class="field-name fieldName ng-scope" ng-if="ItemEditorCtrl.singleLabelShowing(fieldObj)">
+                   <span class="ng-binding">Close Date</span>
+                 </div><!-- end ngIf: ItemEditorCtrl.singleLabelShowing(fieldObj) -->
+                 <!-- ngRepeat: value in fieldObj.fieldModel.fieldValue --><!-- ngIf: !ItemEditorCtrl.singleLabelShowing(fieldObj) --><!-- end ngRepeat: value in fieldObj.fieldModel.fieldValue -->
+               </div><!-- end ngIf: ItemEditorCtrl.labelShowing(fieldObj) -->
+               <div class="field-values ng-scope">
+                 <!-- ngIf: !fieldObj.fieldModel.showing && !fieldObj.needsMultiEditor --><div ng-if="!fieldObj.fieldModel.showing &amp;&amp; !fieldObj.needsMultiEditor" class="ng-scope">
+                     <div ng-switch="ItemEditorCtrl.fieldHasValue(fieldObj)">
+                         <!-- ngSwitchWhen: true --><div ng-switch-when="true" class="ng-scope">
+                             <!-- ngRepeat: row in ItemEditorCtrl.getFieldDisplayHtml(fieldObj) track by $index --><div class="fieldValueText font-size0 ellipsis ng-binding ng-scope" ng-repeat="row in ItemEditorCtrl.getFieldDisplayHtml(fieldObj) track by $index" ng-bind-html="row" dts="field_text" popgun="" popgun-group="PopText" popgun-tip-class="riq-namespace riq-text-tip">February 23, 2017</div><!-- end ngRepeat: row in ItemEditorCtrl.getFieldDisplayHtml(fieldObj) track by $index -->
+                         </div><!-- end ngSwitchWhen: -->
+                         <!-- ngSwitchDefault: -->
+                     </div>
+                 </div><!-- end ngIf: !fieldObj.fieldModel.showing && !fieldObj.needsMultiEditor -->
+
+                 <!-- ngIf: fieldObj.fieldModel.showing || fieldObj.needsMultiEditor -->
+
+                 <!-- ngIf: ItemEditorCtrl.shouldShowEdit(fieldObj) && ItemEditorCtrl.isSidebar --><a class="icon-edit ng-scope" ng-if="ItemEditorCtrl.shouldShowEdit(fieldObj) &amp;&amp; ItemEditorCtrl.isSidebar" dts="edit_btn_3"></a><!-- end ngIf: ItemEditorCtrl.shouldShowEdit(fieldObj) && ItemEditorCtrl.isSidebar -->
+               </div>
+           </div>
+</div>
+</item-editor-field>
+       </div>
