@@ -15,8 +15,10 @@
 
 body {
 	background: #ededed;
+	color: #777777;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	line-height: 18px;
+	font-size: 16px;
+	line-height: 20px;
 }
 
 .navwrapper {
@@ -29,18 +31,17 @@ body {
 	height: 100%;
 	margin: 0 auto;
 	position: relative;
-	font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
 .wrapper {
 	background-image: url(http://www.thegraphicmac.com/wp-content/uploads/ps_subtle-patterns.jpg);
 	display: inline-block;
 	width: 100%;
+	vertical-align: middle;
 }
 
-#nav {
+.nav {
 	position: fixed;
-	background: #ffffff;
 	width: 100%;
 	height: 100px;
 	overflow: visible;
@@ -59,58 +60,69 @@ h1 {
 	color: #ffffff;
 	font-size: 34px;
 	font-weight: 600;
+	font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
 h2 {
 	color: #4aaaa5;
 	font-size: 30px;
 	font-weight: 600;
+	font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
 h3 {
 	color: #4aaaa5;
 	font-size: 20px;
 	font-weight: 500;
+	font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
-p {
-	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	line-height: 20px;;
-}
-
-nav ul {
+nav {
 	position: absolute;
-	right: 0;
+	left: 700px;
+	width: 100%;
 }
-
 
 nav ul li{
 	display: inline-block;
 	float: left;
 	font-size: 14px;
-	margin: 10px;
+	margin: 0px;
 	padding: 20px;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
+nav ul li a:hover {
+	color: #4aaaa5;
+}
+
+nav ul li a:link {
+	color: #777777;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #777777;
+}
+
 .index {
-	border-right: 1px solid #000000;
-	padding-top: 5px;
-    padding-bottom: 5px;
-    margin-top: 30px;
+	border-right: 1px solid #777777;
+	padding-top: 1px;
+    padding-bottom: 1px;
+    margin-top: 35px;
 }
 
 .portfolio {
-	border-right: 1px solid #000000;
-	padding-top: 5px;
-    padding-bottom: 5px;
-    margin-top: 30px;
+	border-right: 1px solid #777777;
+	padding-top: 1px;
+    padding-bottom: 1px;
+    margin-top: 35px;
 }
 
 .contact {
-	padding-top: 5px;
-    padding-bottom: 5px;
-    margin-top: 30px;
+	padding-top: 1px;
+    padding-bottom: 1px;
+    margin-top: 35px;
 }
 
 section {
@@ -125,9 +137,43 @@ section {
 	border: 1px solid #cccccc;
 }
 
+section img:hover {
+	opacity: .5;
+}
+
 section img {
 	display: inline-block;
 	margin-bottom: 30px;
+}
+
+input[name=text] {
+	font-size: 16px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+ }
+
+textarea {
+	font-size: 16px;
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-color: #dfdfdf;
+    resize: none;
+}
+
+input[type=button] {
+    background-color: #4aaaa5;
+    font-size: 16px;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
 .box1 {
@@ -171,8 +217,6 @@ form {
 
 article img {
 	display: block;
-	width: "200px";
-	height: "200px";
 	float: left;
 	margin-right: 15px;
 }
